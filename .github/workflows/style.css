@@ -1,0 +1,97 @@
+/* استدعاء الخطوط لضمان عملها */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    /* خلفية متدرجة عميقة وراقية */
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    /* تأثير الزجاج (Glassmorphism) */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 50px 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* التنسيق الخاص بكلمة "عمل الطالبات" أو الشارة */
+h2 {
+    font-size: 1.2rem;
+    background: #6366f1;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+/* تنسيق الأسماء داخل البطاقات (مثل صورتك) */
+h1 {
+    margin: 15px 0;
+    font-size: 1.6rem;
+    padding: 15px;
+    /* إطار خفيف جداً حول الاسم */
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    
+    /* حل مشكلة الاختفاء: نستخدم لوناً ثابتاً وواضحاً */
+    color: #ffffff; 
+    
+    /* إضافة ظل خفيف للنص ليعطيه عمق */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    
+    transition: 0.3s all ease;
+    cursor: default;
+}
+
+h1:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+    border-color: #6366f1; /* يتغير لون الإطار عند التأشير */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+h1:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+    border-color: #6366f1;
+}
+
+/* تنسيق النصوص العادية */
+p {
+    font-size: 1.1em;
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+/* تنسيق الأزرار */
+button {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px 40px;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Cairo', sans-serif;
+}
+
+button:hover {
+    background: #fff;
+    color: #0f172a;
+    transform: scale(1.05);
+}
